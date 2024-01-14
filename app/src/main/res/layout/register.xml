@@ -1,0 +1,85 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent" tools:context = ".MainActivity">
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerTitle"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="@string/register"
+        android:id="@+id/registerScreenTitle"
+        android:layout_below="@+id/registerTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="35sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:id="@+id/registerEmail"
+        android:hint="@string/email"
+        android:focusable="true"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#444"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/registerScreenTitle"
+        android:layout_alignParentStart="true"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/registerPassword"
+        android:layout_below="@+id/registerEmail"
+        android:layout_alignParentStart="true"
+        android:textColorHint="#444"
+        android:hint="@string/password"
+        android:autofillHints="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/registerErrors"
+        android:layout_below="@+id/registerPassword"
+        android:textColor="#ff0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_login"
+        android:id="@+id/go_login"
+        android:layout_below="@+id/registerErrors"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="35sp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/registerBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/registerCancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

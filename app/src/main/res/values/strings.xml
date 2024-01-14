@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Realms of Camelot</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_account">No account? Click here.</string>
+    <string name="go_login">Already Registered? Click here.</string>
+    <string name="missing_fields">All fields are required.</string>
+    <string name="no_network">No network connection!</string>
+    <string name="ok">OK</string>
+</resources>

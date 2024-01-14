@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jasononeal.roc'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.jasononeal.roc"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'androidx.annotation:annotation:1.7.1'
+    implementation 'com.google.code.gson:gson:2.8.7'
+    api('io.jsonwebtoken:jjwt-api:0.12.3')
+    runtimeOnly('io.jsonwebtoken:jjwt-impl:0.12.3')
+    runtimeOnly('io.jsonwebtoken:jjwt-orgjson:0.12.3') {
+        exclude(group: 'org.json', module: 'json') //provided by Android natively
+    }
+}
